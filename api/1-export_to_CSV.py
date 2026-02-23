@@ -2,10 +2,6 @@
 """
 Exports employee TODO list data to CSV format.
 """
-#!/usr/bin/python3
-"""
-Exports employee TODO list data to CSV format.
-"""
 
 import csv
 import json
@@ -35,7 +31,7 @@ if __name__ == "__main__":
 
     filename = "{}.csv".format(user_id)
 
-    with open(filename, mode="w", newline="") as csv_file:
+    with open(filename, "w", newline="") as csv_file:
         writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
 
         for task in todos:
